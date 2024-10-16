@@ -38,7 +38,7 @@ on:
           - 'nokia-ea0326gmp'
           - '360-t7-108m'
           - '360-t7'
-          - 'xiaomi_redmi-router-ax6000'
+          - 'xiaomi-redmi-router-ax6000'
       USE_MTWIFI_CFG:
         description: '使用 mtwifi-cfg 无线控制界面'
         required: false
@@ -65,7 +65,7 @@ on:
 env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/${{ inputs.SOURCE_BRANCH }}/${{ inputs.DEVICE_MODEL }}.config
-  DTS_NAME: mt7986a_${{ inputs.DEVICE_MODEL }}.dts
+  DTS_NAME: mt7986a-${{ inputs.DEVICE_MODEL }}.dts
   DIY_P1_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part1.sh
   DIY_P2_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part2.sh
   DIY_P3_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part3.sh

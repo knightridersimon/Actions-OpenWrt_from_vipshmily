@@ -252,7 +252,7 @@ jobs:
         cd openwrt
         echo -e "$(($(nproc)+4)) thread compile"
         #make -j$(($(nproc)+4)) || make -j$(nproc) V=s
-        make -j=1 V=s
+        make -j 1 V=s
         echo "status=success" >> $GITHUB_OUTPUT
         echo "${{ inputs.DEVICE_MODEL }}" > DEVICE_NAME
         #grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME

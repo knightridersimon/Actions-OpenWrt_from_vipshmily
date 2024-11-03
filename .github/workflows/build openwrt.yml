@@ -18,6 +18,7 @@ on:
           - 'Lienol'
           - 'padavanonly-immortalwrt'
           - 'vipshmily-immortalwrt'
+         
       repo_branch:
         description: '选择分支'
         required: true
@@ -37,6 +38,7 @@ on:
         options:
           - 'xiaomi_mi-router-4a-gigabit'
           - 'netgear_r7450'
+          - 'xiaomi_redmi-router-ax6000'
       ssh_action:
         description: 'SSH connection to Actions'
         required: false

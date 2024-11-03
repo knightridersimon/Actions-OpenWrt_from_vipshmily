@@ -16,6 +16,7 @@ on:
           - 'lede'
           - 'immortalwrt'
           - 'Lienol'
+          - 'x-wrt'
           - 'padavanonly-immortalwrt'
           - 'vipshmily-immortalwrt'
          
@@ -150,7 +151,11 @@ jobs:
         elif [ "${{ inputs.source_branch }}" = "vipshmily-immortalwrt" ]; then
               REPO_URL="https://github.com/vipshmily/immortalwrt"
               REPO_BRANCH="${{ inputs.repo_branch }}"
+        elif [ "${{ inputs.source_branch }}" = "x-wrt" ]; then
+              REPO_URL=" https://github.com/x-wrt/x-wrt"
+              REPO_BRANCH="${{ inputs.repo_branch }}"
         else
+       
               echo "Unknown source code repository."
               exit 1
         fi

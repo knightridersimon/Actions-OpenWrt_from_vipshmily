@@ -153,8 +153,8 @@ jobs:
               REPO_URL="https://github.com/vipshmily/immortalwrt"
               REPO_BRANCH="${{ inputs.repo_branch }}"
         elif [ "${{ inputs.source_branch }}" = "x-wrt" ]; then
-              #REPO_URL=" https://github.com/x-wrt/x-wrt"
-              REPO_URL=" https://github.com/knightridersimon/x-wrt"
+              REPO_URL=" https://github.com/x-wrt/x-wrt"
+              #REPO_URL=" https://github.com/knightridersimon/x-wrt"
               REPO_BRANCH="${{ inputs.repo_branch }}"
         else
        

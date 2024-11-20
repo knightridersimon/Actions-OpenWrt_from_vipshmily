@@ -10,7 +10,7 @@ on:
       SOURCE_BRANCH:
         description: '选择源码'
         required: true
-        default: 'vipshmily-immortalwrt-mt798x'
+        default: 'padavanonly-immortalwrt-mt798x-23.05'
         type: choice
         options:
           - 'vipshmily-immortalwrt-mt798x'
@@ -22,7 +22,7 @@ on:
       REPO_BRANCH:
         description: '选择分支'
         required: true
-        default: 'main'
+        default: 'master'
         type: choice
         options:
           - 'main'
@@ -32,7 +32,7 @@ on:
       DEVICE_MODEL:
         description: '选择型号'
         required: true
-        default: 'nokia-ea0326gmp'
+        default: 'xiaomi-redmi-router-ax6000'
         type: choice
         options:
           - 'nokia-ea0326gmp'
@@ -69,7 +69,7 @@ env:
   DIY_P1_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part1.sh
   DIY_P2_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part2.sh
   DIY_P3_SH: config/${{ inputs.SOURCE_BRANCH }}/diy-part3.sh
-  UPLOAD_BIN_DIR: false
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai

@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
@@ -26,7 +26,7 @@ sed -i 's/192.168.1.1/192.168.6.1/g' package/base-files/files/bin/config_generat
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65536' package/base-files/files/etc/sysctl.conf
 
 # 替换编译目录文件
-cp -f $GITHUB_WORKSPACE/config/vipshmily-immortalwrt-mt798x/mt7981-nokia-ea0326gmp.dts $GITHUB_WORKSPACE/openwrt/target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-nokia-ea0326gmp.dts
+##cp -f $GITHUB_WORKSPACE/config/vipshmily-immortalwrt-mt798x/mt7981-nokia-ea0326gmp.dts $GITHUB_WORKSPACE/openwrt/target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-nokia-ea0326gmp.dts
 
 # 自定义添加/删除/更新软件包
 rm -rf feeds/packages/lang/golang
@@ -56,4 +56,4 @@ rm -rf package/istore/luci-app-store
 #rm -rf /tmp/clash.tar.gz >/dev/null 2>&1
 
 ##-----------------Manually set CPU frequency for MT7981B-----------------
-sed -i '/"mediatek"\/\*|\"mvebu"\/\*/{n; s/.*/\tcpu_freq="1680MHz" ;;/}' package/emortal/autocore/files/generic/cpuinfo
+##sed -i '/"mediatek"\/\*|\"mvebu"\/\*/{n; s/.*/\tcpu_freq="1680MHz" ;;/}' package/emortal/autocore/files/generic/cpuinfo

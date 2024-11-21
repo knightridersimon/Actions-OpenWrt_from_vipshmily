@@ -300,7 +300,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         body: |
             ${{ env.DEVICE_NAME }}固件，基于${{ inputs.SOURCE_BRANCH }}-${{ inputs.REPO_BRANCH }}， 编译时间: ${{ env.COMPILE_TIME }}
-            Default IP: 192.168.6.1
+            Default IP: 192.168.8.1
             Default username: root
             Default password: none
           #  插件列表：ddns/filetransfer/OpenClash/SmartDNS/ttyd/adbyby-plus/zerotier/KMS
